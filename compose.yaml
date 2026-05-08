@@ -1,0 +1,8 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4.2.5-management
+    environment:
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - '127.0.0.1:5672:5672'
+      - '127.0.0.1:15672:15672' # Port for management ui
